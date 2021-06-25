@@ -1,0 +1,12 @@
+version: "2.0"
+
+stories:
+
+- story: knowledge base happy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_bot_role
+  - action: utter_bot_role
+  - intent: query_knowledge_base
+  - action: action_query_knowledge_base

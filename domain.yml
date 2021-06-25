@@ -1,0 +1,77 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - query_knowledge_base
+  - ask_bot_role
+  - bot_challenge
+  - positive_feedback
+  - unhelpful_feedback
+  - seek_help
+  - ask_repotting_advice
+  - how_to_repot
+  - how_to_water
+
+entities:
+  - object_type
+  - mention
+  - attribute
+  - plant
+#  - object
+
+slots:
+  object_type:
+    type: text
+    influence_conversation: false
+  mention:
+    type: any
+    influence_conversation: false
+  attribute:
+    type: any
+    influence_conversation: false
+  plant:
+    type: text
+    influence_conversation: false
+#  object:
+#    type: text
+#    influence_conversation: false
+
+responses:
+  utter_greet:
+  - text: "Hello! Happy to assist you today."
+
+  utter_bot_role:
+  - text: "I can advise you how to care for certain houseplants and provide you with guidelines on knowing when it's time to water and re-pot your plants."
+
+  utter_further_assistance:
+    - text: "Happy to continue answering your plant-care questions."
+
+  utter_disappointment:
+    - text: "I'm sorry I couldn't be much of assistance today."
+
+  utter_repotting_advice:
+    - text: "Check the bottom of your pot - if you can see the roots of your plant growing through the drainage holes, your plant needs to be repotted in a larger growth pot."
+
+  utter_watering_advice:
+    - text: "Try the finger dip test: dip your index finger in soil up to 2nd knuckle. If the finger is dry, it's time to give your plant a drink."
+
+  utter_how_to_repot:
+    - text: "You can find a step-by-step guide in this video: https://www.youtube.com/watch?v=J-TpZ0Gwm2M"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_rephrase:
+    - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
+    - text: "Could you please rephrase your message? I didn't quite get that."
+
+actions:
+  - action_query_knowledge_base
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

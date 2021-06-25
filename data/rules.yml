@@ -1,0 +1,55 @@
+version: "2.0"
+
+rules:
+
+- rule: greet
+  steps:
+    - or:
+        - intent: greet
+        - intent: seek_help
+    - action: utter_greet
+
+- rule: say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: explain the assistant's abilities
+  steps:
+    - intent: ask_bot_role
+    - action: utter_bot_role
+
+- rule: query knowledge base
+  steps:
+    - intent: query_knowledge_base
+    - action: action_query_knowledge_base
+
+- rule: positive feedback
+  steps:
+    - intent: positive_feedback
+    - action: utter_further_assistance
+
+- rule: unhelpful feedback
+  steps:
+    - intent: unhelpful_feedback
+    - action: utter_disappointment
+
+- rule: watering advice
+  steps:
+    - intent: how_to_water
+    - action: utter_watering_advice
+
+- rule: repotting guide
+  steps:
+    - intent: how_to_repot
+    - action: utter_how_to_repot
+
+- rule: repotting check
+  steps:
+    - intent: ask_repotting_advice
+    - action: utter_repotting_advice

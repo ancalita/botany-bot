@@ -1,0 +1,72 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: knowledge base path 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      what can you help me with?
+    intent: ask_bot_role
+  - action: utter_bot_role
+  - user: |
+      list the [plants]{"entity": "object_type", "value": "plant"} you can advise on
+    intent: query_knowledge_base
+  - action: action_query_knowledge_base
+
+- story: positive feedback path
+  steps:
+  - user: |
+      lovely, cheers
+    intent: positive_feedback
+  - action: utter_further_assistance
+
+- story: greet path
+  steps:
+  - user: |
+      I need help with my plants.
+    intent: seek_help
+  - action: utter_greet
+
+- story: watering path
+  steps:
+    - user: |
+        When should I water my plant?
+      intent: how_to_water
+    - action: utter_watering_advice
+
+- story: repotting path
+  steps:
+    - user: |
+        How do I know when to repot my plant?
+      intent: ask_repotting_advice
+    - action: utter_repotting_advice
+    - user: |
+        How do I go about repotting my plant?
+      intent: how_to_repot
+    - action: utter_how_to_repot
+
+
+- story: unhelpful feedback path
+  steps:
+    - user: |
+        That's not detailed enough.
+      intent: unhelpful_feedback
+    - action: utter_disappointment
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot

@@ -1,0 +1,92 @@
+{
+  "plant": [
+    {
+      "id": 0,
+      "name": "umbrella tree",
+      "botanical_name": "Schefflera",
+      "description": "evergreen tree commonly grown in mild to warm climates",
+      "light": "bright indirect light",
+      "watering": "once a week",
+      "humidity": "mist once or more per week",
+      "min_temperature_celsius": 13,
+      "image": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_1460,h_2190/at%2Farchive%2F44701b6550382a9357bc4d8b3bc6259d2b7ed626"
+    },
+    {
+      "id": 1,
+      "name": "ficus ginseng",
+      "botanical_name": "Ficus microcarpa",
+      "description": "evergreen indoor plant member of the fig family",
+      "light": "bright sunlight",
+      "watering": "once a week",
+      "humidity": "mist once or more per week",
+      "min_temperature_celsius": 12,
+      "image": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_jpg,h_1300,q_auto:good,w_1300/v1594328374/ci0emxvrumntycaojojq.jpg"
+    },
+    {
+      "id": 2,
+      "name": "snake plant",
+      "botanical_name": "Sansevieria trifasciata",
+      "description": "evergreen perennial plant great for the bedroom as it stores up oxygen throughout the day, then releases it all at night",
+      "light": "bright indirect light",
+      "watering": "every 2 weeks lightly",
+      "humidity": "prefers dry air, mist occasionally",
+      "min_temperature_celsius": 5,
+      "image": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1618420140/nfruhkfvmlxdpyih5ahj.jpg"
+    },
+    {
+      "id": 3,
+      "name": "parlour palm",
+      "botanical_name": "Chamaedorea elegans",
+      "description": "herbaceous perennial native to Mexico and Guatemala, beloved as indoor plant since Victorian times",
+      "light": "moderate to bright indirect light",
+      "watering": "once a week",
+      "humidity": "mist once a week",
+      "min_temperature_celsius": 10,
+      "image": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1539350311/products/chamaedorea-9f7e79.jpg"
+    },
+    {
+      "id": 4,
+      "name": "money plant",
+      "botanical_name": "Pilea peperomioides",
+      "description": "native to Yunnan and Sichuan provinces of southern China, it's best to rotate the pot every few days so that the plant grows evenly towards the light",
+      "light": "bright indirect light",
+      "watering": "once a week lightly",
+      "humidity": "mist once or more per week",
+      "min_temperature_celsius": 10,
+      "image": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1595236422/cxexpthnkvnssz3zcelz.jpg"
+    },
+    {
+      "id": 5,
+      "name": "maidenhair fern",
+      "botanical_name": "Adiantum raddianum",
+      "description": "native to tropical regions around the world, avoid touching her leaves or they might turn brown in protest.",
+      "light": "bright indirect light",
+      "watering": "once every other day",
+      "humidity": "mist every other day",
+      "min_temperature_celsius": 16,
+      "image": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1526653346/products/maidenhair-fern-e1a1d9.jpg"
+    },
+    {
+      "id": 6,
+      "name": "devil's ivy",
+      "botanical_name": "Epipremnum aureum",
+      "description": "evergreen vine also known as golden pothos, usually found in forests in south-east Asia",
+      "light": "fine in shade and bright soft light",
+      "watering": "once a week",
+      "humidity": "mist once or more per week",
+      "min_temperature_celsius": 12,
+      "image": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1618417886/o9s5jk0fkxdm0zpp7edh.jpg"
+    },
+    {
+      "id": 7,
+      "name": "red chinese evergreen",
+      "botanical_name": "Aglaonema crete",
+      "description": "native to south-east Asia, it's a very low maintenance small indoor plant",
+      "light": "bright indirect dappled light",
+      "watering": "once a week lightly",
+      "humidity": "mist once a week",
+      "min_temperature_celsius": 15,
+      "image": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1581949716/cyxonbr7h6zt8umiukts.jpg"
+    }
+  ]
+}

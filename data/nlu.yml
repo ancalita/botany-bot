@@ -1,0 +1,121 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hiya
+    - hey there
+    - let's go
+    - good afternoon
+
+- intent: seek_help
+  examples: |
+    - i'd like some help with my plants.
+    - can you help me care for my plants?
+    - i need some advice
+#   - can you help me with my [stingray plant](object)
+
+- intent: goodbye
+  examples: |
+    - see you
+    - see ya
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: positive_feedback
+  examples: |
+    - thank you
+    - cheers
+    - thanks a bunch
+    - lovely
+    - thanks
+    - great
+    - amazing
+    - alright
+    - sounds good
+
+- intent: unhelpful_feedback
+  examples: |
+    - this wasn't helpful
+    - not enough information
+    - the information you've provided is not that detailed.
+    - that wasn't very detailed.
+    - rubbish
+    - none of these plants are of interest to me.
+    - that's not what I wanted to know.
+
+- intent: ask_bot_role
+  examples: |
+    - how can you help me?
+    - what can you do?
+    - what can you help me with?
+
+- intent: query_knowledge_base
+  examples: |
+    - what [plants]{"entity": "object_type", "value": "plant"} do you have advice on?
+    - list all the [houseplants]{"entity": "object_type", "value": "plant"} you have information on
+    - can you show me which [plants]{"entity": "object_type", "value": "plant"} you can help me with?
+    - can you tell me which [plants]{"entity": "object_type", "value": "plant"} you advise on?
+    - could you list which [plants]{"entity": "object_type", "value": "plant"} you can help with?
+    - how much [water]{"entity": "attribute", "value":"watering"} does a [ficus ginseng](plant) need?
+    - how much [humidity]{"entity": "attribute", "value":"humidity"} does a [snake plant](plant) require?
+    - how much [light]{"entity": "attribute", "value":"light"} does the [maidenhair fern](plant) need?
+    - what other [name]{"entity": "attribute", "value":"botanical_name"] is the [parlour palm](plant) known as?
+    - how much [water]{"entity": "attribute", "value":"watering"} does [this](mention) plant need?
+    - how much [light]{"entity": "attribute", "value":"light"} does [it](mention) need?
+    - how much [humidity]{"entity": "attribute", "value":"humidity"} does [it](mention) require?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that the [umbrella tree](plant) can survive in?
+    - show me an [image]{"entity": "attribute", "value":"image"} of the [money plant](plant).
+    - what kind of [light]{"entity": "attribute", "value":"light"} does the [red chinese evergreen](plant) [plant]{"entity": "object_type", "value": "plant"} need?
+    - can you tell me how much [water]{"entity": "attribute", "value":"watering"} does the [devil's ivy](plant) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does the [devil's ivy](plant) need?
+
+- intent: ask_repotting_advice
+  examples: |
+    - How do I know when it's time to repot my plant?
+    - When should I repot my plant?
+    - What are the signs that my plant should be repotted?
+    - Should I re-pot my plant?
+
+- intent: how_to_repot
+  examples: |
+    - Tell me how to re-pot my plant.
+    - What should I do in order to repot my plant?
+    - How do I even begin to repot my plant?
+    - Give me instructions on how to repot my plant.
+
+- intent: how_to_water
+  examples: |
+    - How do I know that my plant is thirsty?
+    - How do I know when it's time to water my plant
+    - What are the signs my plant needs watering
+    - How should I check that my plant needs water
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- lookup: plant
+  examples: |
+    - umbrella tree
+    - ficus ginseng
+    - snake plant
+    - parlour palm
+    - money plant
+    - maidenhair fern
+    - devil's ivy
+    - red chinese evergreen
