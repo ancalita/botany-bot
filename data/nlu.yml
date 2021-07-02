@@ -18,7 +18,7 @@ nlu:
   examples: |
     - i'd like some help with my plants.
     - can you help me care for my plants?
-    - i need some advice
+    - i need some advice on caring for my plant.
 
 - intent: ask_for_plant
   examples: |
@@ -81,22 +81,95 @@ nlu:
 - intent: query_knowledge_base
   examples: |
     - what [plants]{"entity": "object_type", "value": "plant"} do you have advice on?
-    - list all the [houseplants]{"entity": "object_type", "value": "plant"} you have information on
+    - what [houseplants]{"entity": "object_type", "value": "plant"} do you have advice on?
+    - list all the [houseplants]{"entity": "object_type", "value": "plant"} you have information on.
+    - list all the [plants]{"entity": "object_type", "value": "plant"} you have information on.
     - can you show me which [plants]{"entity": "object_type", "value": "plant"} you can help me with?
     - can you tell me which [plants]{"entity": "object_type", "value": "plant"} you advise on?
     - could you list which [plants]{"entity": "object_type", "value": "plant"} you can help with?
     - how much [water]{"entity": "attribute", "value":"watering"} does a [ficus ginseng](plant) need?
+    - how much [water]{"entity": "attribute", "value":"watering"} does an [umbrella tree](plant) need?
+    - how much [water]{"entity": "attribute", "value":"watering"} does a [devil's ivy](plant) need?
+    - how much [water]{"entity": "attribute", "value":"watering"} does a [maidenhair fern](plant) need?
+    - how much [water]{"entity": "attribute", "value":"watering"} does a [snake plant](plant) need?
+    - how much [water]{"entity": "attribute", "value":"watering"} does a [parlour palm](plant) need?
+    - how much [water]{"entity": "attribute", "value":"watering"} does a [money plant](plant) need?
+    - how much [water]{"entity": "attribute", "value":"watering"} does a [red chinese evergreen](plant) need?
     - how much [humidity]{"entity": "attribute", "value":"humidity"} does a [snake plant](plant) require?
+    - how much [humidity]{"entity": "attribute", "value":"humidity"} does an [umbrella tree](plant) require?
+    - how much [humidity]{"entity": "attribute", "value":"humidity"} does a [ficus ginseng](plant) require?
+    - how much [humidity]{"entity": "attribute", "value":"humidity"} does a [devil's ivy](plant) require?
+    - how much [humidity]{"entity": "attribute", "value":"humidity"} does a [maidenhair fern](plant) require?
+    - how much [humidity]{"entity": "attribute", "value":"humidity"} does a [parlour palm](plant) require?
+    - how much [humidity]{"entity": "attribute", "value":"humidity"} does a [money plant](plant) require?
+    - how much [humidity]{"entity": "attribute", "value":"humidity"} does a [red chinese evergreen](plant) require?
     - how much [light]{"entity": "attribute", "value":"light"} does the [maidenhair fern](plant) need?
+    - how much [light]{"entity": "attribute", "value":"light"} does the [umbrella tree](plant) need?
+    - how much [light]{"entity": "attribute", "value":"light"} does the [ficus ginseng](plant) need?
+    - how much [light]{"entity": "attribute", "value":"light"} does the [snake plant](plant) need?
+    - how much [light]{"entity": "attribute", "value":"light"} does the [parlour palm](plant) need?
+    - how much [light]{"entity": "attribute", "value":"light"} does the [money plant](plant) need?
+    - how much [light]{"entity": "attribute", "value":"light"} does the [devil's ivy](plant) need?
+    - how much [light]{"entity": "attribute", "value":"light"} does the [red chinese evergreen](plant) need?
     - what other [name]{"entity": "attribute", "value":"botanical_name"] is the [parlour palm](plant) known as?
+    - what other [name]{"entity": "attribute", "value":"botanical_name"] is the [umbrella tree](plant) known as?
+    - what other [name]{"entity": "attribute", "value":"botanical_name"] is the [ficus ginseng](plant) known as?
+    - what other [name]{"entity": "attribute", "value":"botanical_name"] is the [snake plant](plant) known as?
+    - what other [name]{"entity": "attribute", "value":"botanical_name"] is the [money plant](plant) known as?
+    - what other [name]{"entity": "attribute", "value":"botanical_name"] is the [maidenhair fern](plant) known as?
+    - what other [name]{"entity": "attribute", "value":"botanical_name"] is the [devil's ivy](plant) known as?
+    - what other [name]{"entity": "attribute", "value":"botanical_name"] is the [red chinese evergreen](plant) known as?
     - how much [water]{"entity": "attribute", "value":"watering"} does [this](mention) plant need?
     - how much [light]{"entity": "attribute", "value":"light"} does [it](mention) need?
     - how much [humidity]{"entity": "attribute", "value":"humidity"} does [it](mention) require?
     - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that the [umbrella tree](plant) can survive in?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that the [ficus ginseng](plant) can survive in?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that the [snake plant](plant) can survive in?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that the [parlour palm](plant) can survive in?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that the [money plant](plant) can survive in?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that the [maidenhair fern](plant) can survive in?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that the [devil's ivy](plant) can survive in?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that the [red chinese evergeen](plant) can survive in?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that [it](mention) can survive in?
+    - what is the lowest [temperature]{"entity": "attribute", "value":"min_temperature_celsius"} that [this](mention) plant can survive in?
     - show me an [image]{"entity": "attribute", "value":"image"} of the [money plant](plant).
+    - show me an [image]{"entity": "attribute", "value":"image"} of the [umbrella tree](plant).
+    - show me an [image]{"entity": "attribute", "value":"image"} of the [ficus ginseng](plant).
+    - show me an [image]{"entity": "attribute", "value":"image"} of the [snake plant](plant).
+    - show me an [image]{"entity": "attribute", "value":"image"} of the [parlour palm](plant).
+    - show me an [image]{"entity": "attribute", "value":"image"} of the [maidenhair fern](plant).
+    - show me an [image]{"entity": "attribute", "value":"image"} of the [red chinese evergreen](plant).
+    - show me an [image]{"entity": "attribute", "value":"image"} of the [devil's ivy](plant).
     - what kind of [light]{"entity": "attribute", "value":"light"} does the [red chinese evergreen](plant) [plant]{"entity": "object_type", "value": "plant"} need?
+    - what kind of [light]{"entity": "attribute", "value":"light"} does the [umbrella tree](plant) [plant]{"entity": "object_type", "value": "plant"} need?
+    - what kind of [light]{"entity": "attribute", "value":"light"} does the [ficus ginseng](plant) [plant]{"entity": "object_type", "value": "plant"} need?
+    - what kind of [light]{"entity": "attribute", "value":"light"} does the [snake plant](plant) [plant]{"entity": "object_type", "value": "plant"} need?
+    - what kind of [light]{"entity": "attribute", "value":"light"} does the [parlour palm](plant) [plant]{"entity": "object_type", "value": "plant"} need?
+    - what kind of [light]{"entity": "attribute", "value":"light"} does the [money plant](plant) [plant]{"entity": "object_type", "value": "plant"} need?
+    - what kind of [light]{"entity": "attribute", "value":"light"} does the [devil's ivy](plant) [plant]{"entity": "object_type", "value": "plant"} need?
+    - what kind of [light]{"entity": "attribute", "value":"light"} does the [maidenhair fern](plant) [plant]{"entity": "object_type", "value": "plant"} need?
     - can you tell me how much [water]{"entity": "attribute", "value":"watering"} does the [devil's ivy](plant) need?
+    - can you tell me how much [water]{"entity": "attribute", "value":"watering"} does the [ficus ginseng](plant) need?
+    - can you tell me how much [water]{"entity": "attribute", "value":"watering"} does the [umbrella tree](plant) need?
+    - can you tell me how much [water]{"entity": "attribute", "value":"watering"} does the [parlour palm](plant) need?
+    - can you tell me how much [water]{"entity": "attribute", "value":"watering"} does the [snake plant](plant) need?
+    - can you tell me how much [water]{"entity": "attribute", "value":"watering"} does the [money plant](plant) need?
+    - can you tell me how much [water]{"entity": "attribute", "value":"watering"} does the [maidenhair fern](plant) need?
+    - can you tell me how much [water]{"entity": "attribute", "value":"watering"} does the [red chinese evergreen](plant) need?
     - do you also know how much [light]{"entity": "attribute", "value":"light"} does the [devil's ivy](plant) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does the [ficus ginseng](plant) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does the [umbrella tree](plant) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does the [money plant](plant) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does the [snake plant](plant) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does the [parlour palm](plant) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does the [red chinese evergreen](plant) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does the [maidenhair fern](plant) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does [it](mention) need?
+    - do you also know how much [water]{"entity": "attribute", "value":"watering"} does [it](mention) need?
+    - do you also know how much [humidity]{"entity": "attribute", "value":"humidity"} does [it](mention) need?
+    - do you also know how much [light]{"entity": "attribute", "value":"light"} does [this](mention) plant need?
+    - do you also know how much [water]{"entity": "attribute", "value":"watering"} does [this](mention) plant need?
+    - do you also know how much [humidity]{"entity": "attribute", "value":"humidity"} does [this](mention) plant need?
 
 - intent: ask_repotting_advice
   examples: |
