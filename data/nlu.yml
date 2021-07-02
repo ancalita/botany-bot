@@ -19,22 +19,23 @@ nlu:
     - i'd like some help with my plants.
     - can you help me care for my plants?
     - i need some advice on caring for my plant.
+    - i need some help with my plant.
 
 - intent: ask_for_plant
   examples: |
-    - can you help me with my [stingray plant](plant).
-    - can you help me with my [spider plant](plant).
-    - can you help me with my [ficus benjamina](plant).
-    - can you help me with my [peace lily](plant).
-    - can you help me with my [calathea zebrina](plant).
+    - can you help me with my [ficus ginseng](plant).
+    - can you help me with my [snake plant](plant).
+    - can you help me with my [parlour palm](plant).
+    - can you help me with my [money plant](plant).
+    - can you help me with my [red chinese evergreen](plant).
     - can you help me with my [umbrella tree](plant).
     - can you help me with my [devil's ivy](plant).
     - can you help me with my [maidenhair fern](plant).
-    - do you have any information on the [stingray plant](plant)?
-    - do you have any information on the [spider plant](plant)?
-    - do you have any information on the [peace lily](plant) plant?
-    - do you have any information on the [ficus benjamina](plant)?
-    - do you have any information on the [calathea zebrina](plant) plant?
+    - do you have any information on the [ficus ginseng](plant)?
+    - do you have any information on the [snake plant](plant)?
+    - do you have any information on the [parlour palm](plant) plant?
+    - do you have any information on the [money palnt](plant)?
+    - do you have any information on the [red chinese evergreen](plant) plant?
     - do you have any information on the [devil's ivy](plant)?
     - do you have any information on the [umbrella tree](plant)?
 
@@ -209,8 +210,3 @@ nlu:
     - maidenhair fern
     - devil's ivy
     - red chinese evergreen
-    - stingray plant
-    - spider plant
-    - calathea zebrina
-    - peace lily
-    - ficus benjamina

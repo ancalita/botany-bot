@@ -36,8 +36,10 @@ class SearchObjects(Action):
         if entity:
             if knowledge_base_action.object_name_is_present(entity):
                 response = "Yes, I can answer questions about this plant."
-            else:
-                response = "I'm sorry, I cannot help this time. " \
-                           "Please ask me to list all the plants I have information on."
-            dispatcher.utter_message(text=response)
+                dispatcher.utter_message(text=response)
+                return []
+
+        response = "I'm sorry, I cannot help this time. " \
+                   "Please ask me to list all the plants I have information on."
+        dispatcher.utter_message(text=response)
         return []
