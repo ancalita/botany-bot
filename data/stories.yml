@@ -8,5 +8,7 @@ stories:
   - action: utter_greet
   - intent: ask_bot_role
   - action: utter_bot_role
+  - intent: ask_for_plant
+  - action: search_objects
   - intent: query_knowledge_base
   - action: action_query_knowledge_base

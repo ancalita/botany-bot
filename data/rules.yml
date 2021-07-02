@@ -53,3 +53,8 @@ rules:
   steps:
     - intent: ask_repotting_advice
     - action: utter_repotting_advice
+
+- rule: check for a plant
+  steps:
+    - intent: ask_for_plant
+    - action: search_objects

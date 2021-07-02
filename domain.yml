@@ -12,13 +12,13 @@ intents:
   - ask_repotting_advice
   - how_to_repot
   - how_to_water
+  - ask_for_plant
 
 entities:
   - object_type
   - mention
   - attribute
   - plant
-#  - object
 
 slots:
   object_type:
@@ -33,9 +33,6 @@ slots:
   plant:
     type: text
     influence_conversation: false
-#  object:
-#    type: text
-#    influence_conversation: false
 
 responses:
   utter_greet:
@@ -71,6 +68,7 @@ responses:
 
 actions:
   - action_query_knowledge_base
+  - search_objects
 
 session_config:
   session_expiration_time: 60

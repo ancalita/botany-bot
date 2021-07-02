@@ -19,7 +19,24 @@ nlu:
     - i'd like some help with my plants.
     - can you help me care for my plants?
     - i need some advice
-#   - can you help me with my [stingray plant](object)
+
+- intent: ask_for_plant
+  examples: |
+    - can you help me with my [stingray plant](plant).
+    - can you help me with my [spider plant](plant).
+    - can you help me with my [ficus benjamina](plant).
+    - can you help me with my [peace lily](plant).
+    - can you help me with my [calathea zebrina](plant).
+    - can you help me with my [umbrella tree](plant).
+    - can you help me with my [devil's ivy](plant).
+    - can you help me with my [maidenhair fern](plant).
+    - do you have any information on the [stingray plant](plant)?
+    - do you have any information on the [spider plant](plant)?
+    - do you have any information on the [peace lily](plant) plant?
+    - do you have any information on the [ficus benjamina](plant)?
+    - do you have any information on the [calathea zebrina](plant) plant?
+    - do you have any information on the [devil's ivy](plant)?
+    - do you have any information on the [umbrella tree](plant)?
 
 - intent: goodbye
   examples: |
@@ -119,3 +136,8 @@ nlu:
     - maidenhair fern
     - devil's ivy
     - red chinese evergreen
+    - stingray plant
+    - spider plant
+    - calathea zebrina
+    - peace lily
+    - ficus benjamina
